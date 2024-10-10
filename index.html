@@ -15,16 +15,15 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Raj Shekhar</title>
+    <title>Louise Ramsden</title>
   </head>
-  <body class="light" id="top">
+  <body class="dark" id="top">
     <header class="header center">
       <h3>
-        <a href="https://rjshkhr.github.io/cleanfolio-minimal" class="link"
-          >RS.</a
+        <a href="#" class="link"
+          >Lou.</a
         >
       </h3>
-
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
@@ -38,9 +37,11 @@
           </li>
         </ul>
 
+        <!--
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
           <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
+        </button> 
+        -->
 
         <button
           type="button"
@@ -55,23 +56,21 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <h1>Hi, I am <span class="about__name">Raj Shekhar.</span></h1>
-        <h2 class="about__role">A Front end Developer.</h2>
+        <img src="images/Me.jpg" style="max-width: 30%; max-height: 30%; border-radius: 100%"; />
+        <h1>Hi, I'm <span class="about__name">Louise Ramsden.</span></h1>
+        <h2 class="about__role">A Games Programming Student at the University of Staffordshire.</h2>
         <p class="about__desc">
-          Consectetur neque sed quam molestiae consectetur nesciunt sit alias
-          Vitae libero perferendis reprehenderit optio veritatis Accusantium at
-          voluptatum cumque temporibus et Explicabo iste porro quis numquam
-          distinctio Repellendus adipisci nam perferendis amet eaque hic
-          Voluptates
+          A games programming student with a passion for real time rendering, game engine architecture
+          and bespoke game development.
         </p>
 
         <div class="about__contact center">
           <a href="https://example.com">
-            <span class="btn btn--outline">Resume</span>
+            <span class="btn btn--outline">cv / resume</span>
           </a>
 
           <a
-            href="https://github.com/rjshkhr"
+            href="https://github.com/LouiseRamsden"
             aria-label="github"
             class="link link--icon"
           >
@@ -79,7 +78,7 @@
           </a>
 
           <a
-            href="https://linkedin.com/in/rjshkhr"
+            href="https://www.linkedin.com/in/louise-ramsden-b8b710291/"
             aria-label="linkedin"
             class="link link--icon"
           >
@@ -93,26 +92,24 @@
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
+          <!-- Disc-Go -->
           <div class="project">
-            <h3>Project 1</h3>
+            <h3>Disc-Go</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              <img src="./images/Disc-Go.jpg" style="max-width: 100%; max-height: 100%; border-radius: 20%;"><br />
+              <b>TIGA Award shortlisted</b> party game, made during summer
+              2024 for the University of Staffordshire's 1Up initiative. <br />
+              Made entirely in Unreal engine, I worked on the tech team 
+              to develop the systems and mechanics required to create a 
+              fun and engaging gameplay loop. Systems included: Disc Physics,
+              Game Modes, UI and AI.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Unreal Engine</li>
+              <li class="project__stack-item">Blueprint</li>
+              <li class="project__stack-item">Git</li>
+              <li class="project__stack-item">Agile Methodologies</li>
             </ul>
-
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
             <a
               href="https://example.com"
               aria-label="live preview"
@@ -123,60 +120,79 @@
           </div>
 
           <div class="project">
-            <h3>Project 2</h3>
+            <h3>Rockdove-Raycaster</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              <img src="./images/rockdove.png" style="max-width: 100%; max-height: 100%; border-radius: 20%;"><br />
+              A semi-flatcolour raycaster that I wrote to learn how to write a
+              wolfenstein style raycaster. <br /> It makes use of OpenGL 1.0 to draw 
+              to the screen and GLUT to handle inputs and context management.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">C++</li>
+              <li class="project__stack-item">OpenGL</li>
+              <li class="project__stack-item">freeGLUT</li>
+              <li class="project__stack-item">Visual Studio</li>
+              <li class="project__stack-item">Git</li>
             </ul>
 
             <a
-              href="https://github.com"
+              href="https://github.com/LouiseRamsden/rockdove-raycaster"
               aria-label="source code"
               class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
+
+          </div>
+
+          <div class="project">
+            <h3>Pigeon-Game</h3>
+            <p class="project__description">
+              <img src="./images/pigeon-game.png" style="max-width: 100%; max-height: 100%; border-radius: 20%;"><br />
+              A Project made for my university module "Bespoke Platform Development", where the aim
+              was to create a game that can run on a bespoke platform. I made use of Linux and Docker
+              to compile the project for the evercade exp, and inside the project learned a variety of
+              techniques for different parts of the program such as project structure, collision detection,
+              parallax background scrolling and level scrolling. 
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C++</li>
+              <li class="project__stack-item">SDL</li>
+              <li class="project__stack-item">Linux</li>
+              <li class="project__stack-item">Docker</li>
+              <li class="project__stack-item">Git</li>
+            </ul>
+
             <a
-              href="https://example.com"
-              aria-label="live preview"
+              href="https://github.com/LouiseRamsden/pigeon-game"
+              aria-label="source code"
               class="link link--icon"
             >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              <i aria-hidden="true" class="fab fa-github"></i>
             </a>
           </div>
 
           <div class="project">
-            <h3>Project 3</h3>
+            <h3>OpenGL 1.0 Renderer</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              <img src="./images/openGL.png" style="max-width: 100%; max-height: 100%; border-radius: 20%;"><br />
+              OpenGL 1.0 Fixed Function Renderer.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">C++</li>
+              <li class="project__stack-item">OpenGL</li>
+              <li class="project__stack-item">freeGLUT</li>
+              <li class="project__stack-item">Visual Studio</li>
+              <li class="project__stack-item">Git</li>
+
             </ul>
 
             <a
-              href="https://github.com"
+              href="https://github.com/LouiseRamsden/OpenGLTest"
               aria-label="source code"
               class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
             </a>
           </div>
         </div>
@@ -185,38 +201,75 @@
       <!-- Skills -->
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
+        <h3 class="section__title">Programming Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SCSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Redux</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Jest</li>
-          <li class="skills__list-item btn btn--plain">Enzyme</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
+          <li class="skills__list-item btn btn--plain">Graphics Programming</li>
+          <li class="skills__list-item btn btn--plain">Shader Programming</li>
+          <li class="skills__list-item btn btn--plain">Concurrent Programming</li>
+          <li class="skills__list-item btn btn--plain">AI Programming</li>
+          <li class="skills__list-item btn btn--plain">Physics Programming</li>
         </ul>
+        <br />
+        <h3 class="section__title">Languages</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">C/C++</li>
+          <li class="skills__list-item btn btn--plain">C#</li>
+          <li class="skills__list-item btn btn--plain">Lua</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">UE Blueprint</li>
+          <li class="skills__list-item btn btn--plain">UE Material Nodes</li>
+          <li class="skills__list-item btn btn--plain">HLSL</li>
+        </ul>
+        <br />
+        <h3 class="section__title">Libraries, Frameworks and Engines</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">OpenGL 1.x</li>
+          <li class="skills__list-item btn btn--plain">DirectX 11</li>
+          <li class="skills__list-item btn btn--plain">DirectX Raytracing</li>
+          <li class="skills__list-item btn btn--plain">DirectX 12</li>
+          <li class="skills__list-item btn btn--plain">Unreal Engine</li>
+          <li class="skills__list-item btn btn--plain">Unity Engine</li>
+          <li class="skills__list-item btn btn--plain">Godot Engine</li>
+          <li class="skills__list-item btn btn--plain">Simple DirectMedia Layer(SDL)</li>
+          <li class="skills__list-item btn btn--plain">MonoGame</li>
+        </ul>
+        <br />
+        <h3 class="section__title">Tools</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Linux/Unix</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">RenderDoc</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">CMake</li>
+          <li class="skills__list-item btn btn--plain">Visual Studio</li>
+          <li class="skills__list-item btn btn--plain">Rider</li>
+          <li class="skills__list-item btn btn--plain">CLion</li>
+        </ul>
+        <br />
+        <h3 class="section__title">Team Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Agile Methodologies</li>
+          <li class="skills__list-item btn btn--plain">Soft Skills</li>
+        </ul>
+        <br />
       </section>
 
       <!-- Contact -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
-        <a href="mailto:rjshekhar.official@gmail.com">
-          <span class="btn btn--outline">Email me</span>
+        <a href="mailto:louiseramsden2@gmail.com">
+          <span class="btn btn--outline">Email @ LouiseRamsden2@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/louise-ramsden-b8b710291/">
+          <span class="btn btn--outline">Linkedin @ Louise Ramsden</span>
         </a>
       </section>
     </main>
 
     <footer class="footer">
-      <a
-        href="https://github.com/rjshkhr/cleanfolio-minimal"
-        class="link footer__link"
-      >
-        Created By Raj Shekhar
-      </a>
+
+        <br />
+        <br />
     </footer>
 
     <div class="scroll-container">
